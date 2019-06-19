@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Padding="0,60,0,0"
+             mc:Ignorable="d" x:Class="LiteDBDemo.MainPage">
+    
+    
+    <StackLayout>
+
+    <Label Text="LiteDB em Ação"  />
+    <Button Text="cria um BOT" Clicked="CriaBot_Clicked" ></Button>
+        
+    <Button Text="Modifica o Bot" Clicked="ModificaBot_Clicked" ></Button>
+    <Button Text="Retorna Meu Bot" Clicked="RetornaBot_Clicked" ></Button>
+        
+    <Label Text="Estado do bot:"  />
+    <Label x:Name="lbStatusBot" Text="Aguardando Gerar"  />
+        
+    <Image x:Name="imgBot" />
+
+    </StackLayout>
+</ContentPage>
